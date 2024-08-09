@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(45deg, #000000, #333333);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5);
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.7);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    color: #ff00cc;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.5);
+}
+
+.form-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4), 0 0 15px rgba(0, 0, 255, 0.4);
+}
+
+.section-title {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff00cc;
+    padding-bottom: 5px;
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.5);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.input-field::placeholder {
+    color: #ddd;
+}
+
+.submit-btn {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.7);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(45deg, #ff66b2, #6666ff);
+}
+
+.display-section {
+    margin-bottom: 40px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(255, 0, 255, 0.3), 0 2px 4px rgba(0, 0, 255, 0.3);
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-section, .display-section {
+        padding: 15px;
+    }
+
+    .input-field {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBY Basketball Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        EBY Basketball Management
+    </header>
+    <div class="container">
+        <!-- Team Form Section -->
+        <div class="form-section">
+            <div class="section-title">Add New Team</div>
+            <form id="teamForm" class="form">
+                <input type="text" id="teamName" class="input-field" placeholder="Team Name" required>
+                <input type="text" id="state" class="input-field" placeholder="State Abbreviation" required>
+                <button type="submit" class="submit-btn">Add Team</button>
+            </form>
+        </div>
+
+        <!-- Player Form Section -->
+        <div class="form-section">
+            <div class="section-title">Add New Player</div>
+            <form id="playerForm" class="form">
+                <input type="text" id="playerName" class="input-field" placeholder="Player Name" required>
+                <select id="teamSelect" class="input-field" required>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <input type="number" id="height" class="input-field" placeholder="Height (in inches)" required>
+                <input type="number" id="weight" class="input-field" placeholder="Weight (in lbs)" required>
+                <input type="number" id="speed" class="input-field" placeholder="Speed (mph)" required>
+                <input type="number" id="points" class="input-field" placeholder="Points per Game" required>
+                <input type="number" id="fgPercentage" class="input-field" placeholder="Field Goal Percentage (%)" required>
+                <input type="number" id="ftPercentage" class="input-field" placeholder="Free Throw Percentage (%)" required>
+                <input type="number" id="steals" class="input-field" placeholder="Steals per Game" required>
+                <input type="number" id="blocks" class="input-field" placeholder="Blocks per Game" required>
+                <button type="submit" class="submit-btn">Add Player</button>
+            </form>
+        </div>
+
+        <!-- Display Sections -->
+        <div class="display-section">
+            <div class="section-title">Teams</div>
+            <ul id="teamList" class="list">
+                <!-- Teams will be populated by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="display-section">
+            <div class="section-title">Players</div>
+            <ul id="playerList" class="list">
+                <!-- Players will be populated by JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
